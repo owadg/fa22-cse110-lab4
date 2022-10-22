@@ -22,3 +22,10 @@ Question 10: "length" is in scope, and can be accessed. Thus, this just prints t
 
 Question 11: [50, 100, 150]
 Thus function will not result in an error because even though discountedPrice is being initialized to a variable multiple times and it is const, it is being reinitialized, so the original value is technically never modified.
+
+Question 12:
+A: student.name
+B: student['Grad Year']
+C: student.greeting()
+D: student['Favorite Teacher'].name
+E: student.courseLoad[0]
