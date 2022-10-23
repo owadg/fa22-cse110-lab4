@@ -29,3 +29,34 @@ B: student['Grad Year']
 C: student.greeting()
 D: student['Favorite Teacher'].name
 E: student.courseLoad[0]
+
+Question 13:
+A: '32' since integers map to their exact string representation
+B: 1 since the minus sign requires numeric operands and strings that are numbers are converted to strings.
+C: 3 this is a numeric conversion and null becomes 0.
+D: '3null' this is a string conversion and null becomes 'null'
+E: 4 this is a numeric conversion and true becomes 1.
+F: 0 this is a numeric conversion and false becomes zero and null becomes zero.
+G: '3undefined' this is a string conversion, as such undefined becomes 'undefined.
+H: NaN this is a numeric conversion, so '3' becomes 3 as it is a string literal that only consists of numbers. undefined becomes NaN. Anything added to NaN becomes NaN.
+
+Question 14:
+A: true - this is a numeric conversion, so '2' becomes 2, which is greater than 1.
+B: false - this is a string comparison, and in lexographic order, '1' comes before '2'
+C:  true - '2' becomes a 2, and 2==2 is true.
+D: false - '2' and 2 are different primitive types, and this is a strict equality comparison.
+E: false - true gets numerically converted to a 1, and 1 !=2.
+F: true - we do an explicit type case, so both sides of the operand are booleans. 2 as a boolean is true, and true=true.
+
+Question 15:
+== is an equality operator. It will implicitly convert types, so even if the parameters aren't the same type, but can be converted to the same value, it will return true, whereas === is a strict equality operator, so if the parameters are not the same type, it will instantly return false.
+
+Question 17:
+[2, 4, 6]
+We are iterating through array. For each index i, we take the value of it, and call the callback function on it, which in this case multiplies everything by 2. We append this returned value to the array and return the array after doing this for all induces.
+
+Question 19:
+1
+3
+4
+2
